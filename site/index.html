@@ -167,7 +167,7 @@
                         <b class="arrow"></b>
                         <ul class="submenu">
                             <li class="">
-                                <a href="#">
+                                <a ui-sref="module4">
                                     <i class="menu-icon fa fa-caret-right"></i> 新建地图
                                 </a>
                                 <b class="arrow"></b>
@@ -187,39 +187,39 @@
                         <b class="arrow"></b>
                         <ul class="submenu">
                             <li class="">
-                                <a href="#" class="dropdown-toggle">
+                                <a href="#" ui-sref="module3" class="dropdown-toggle">
                                     <i class="menu-icon fa fa-caret-right"></i> 自来水管道图
                                 </a>
                                 <b class="arrow"></b>
-                                <ul class="submenu">
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-caret-right"></i> 安徽
-                                        </a>
-                                        <b class="arrow"></b>
-                                    </li>
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-caret-right"></i> 上海
-                                        </a>
-                                        <b class="arrow"></b>
-                                    </li>
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-caret-right"></i> 江苏
-                                        </a>
-                                        <b class="arrow"></b>
-                                    </li>
-                                    <li class="">
-                                        <a href="#">
-                                            <i class="menu-icon fa fa-caret-right"></i> 江西
-                                        </a>
-                                        <b class="arrow"></b>
-                                    </li>
-                                </ul>
+                                <!--   <ul class="submenu">
+                                      <li class="">
+                                          <a href="#">
+                                              <i class="menu-icon fa fa-caret-right"></i> 安徽
+                                          </a>
+                                          <b class="arrow"></b>
+                                      </li>
+                                      <li class="">
+                                          <a href="#">
+                                              <i class="menu-icon fa fa-caret-right"></i> 上海
+                                          </a>
+                                          <b class="arrow"></b>
+                                      </li>
+                                      <li class="">
+                                          <a href="#">
+                                              <i class="menu-icon fa fa-caret-right"></i> 江苏
+                                          </a>
+                                          <b class="arrow"></b>
+                                      </li>
+                                      <li class="">
+                                          <a href="#">
+                                              <i class="menu-icon fa fa-caret-right"></i> 江西
+                                          </a>
+                                          <b class="arrow"></b>
+                                      </li>
+                                  </ul> -->
                             </li>
                             <li class="">
-                                <a href="#">
+                                <a ui-sref="module3">
                                     <i class="menu-icon fa fa-caret-right"></i> 煤气管道图
                                 </a>
                                 <b class="arrow"></b>
@@ -276,7 +276,11 @@
                 <!-- /section:basics/content.searchbox -->
             </div>
             <!-- /section:basics/content.breadcrumbs -->
-            <div ui-view class="page-content"></div>
+            <div ui-view class="page-content">
+
+
+
+            </div>
 
         </div>
     </div>
@@ -341,6 +345,7 @@
 <script src="../assets/js/ace/ace.sidebar-scroll-1.js"></script>
 <script src="../assets/js/ace/ace.submenu-hover.js"></script>
 
+
 <!-- Include angular.js, angular-animate.js and angular-ui-router.js-->
 <script src="lib/angular-1.2.14/angular.js"></script>
 <script src="lib/angular-1.2.14/angular-animate.js"></script>
@@ -349,6 +354,28 @@
 <script src="js/app.js"></script>
 <script src="module-one/module1.js"></script>
 <script src="module-two/module2.js"></script>
+<script src="module-four/module4.js"></script>
+<script src="module-three/module3.js"></script>
+<script src="module-five/module5.js"></script>
+
+<script src="scripts/app/main.js"></script>
+<script src="scripts/app/controllers/HomeCtrl.js"></script>
+<script src="scripts/app/controllers/MapCategoryCtrl.js"></script>
+<script src="scripts/app/controllers/MapLayerCtrl.js"></script>
+<script src="scripts/app/controllers/MapContentCtrl.js"></script>
+<script src="scripts/app/controllers/MapCompareCtrl.js"></script>
+<script src="scripts/app/controllers/MapOperationCtrl.js"></script>
+<script src="scripts/app/controllers/MapEditCtrl.js"></script>
+<script src="scripts/index.js"></script>
+<script src="scripts/infoWin.js"></script>
+<!-- 	<script src="resources/scripts/icheck.js"></script> -->
+<script src="resources/scripts/ajaxfileupload.js"></script>
+<!-- SVG Libraries -->
+<script src="scripts/app/svg/SVGPan.js"></script>
+<script src="scripts/app/svg/MapLoader.js"></script>
+<script src="scripts/app/svg/InfoWindow.js"></script>
+
+
 
 </body>
 

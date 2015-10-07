@@ -4,6 +4,9 @@
 angular.module('app', [
     'app.module1',
     'app.module2',
+    'app.module4',
+    'app.module3',
+    'app.module5',
     'ui.router',
     'ngAnimate'
 ])
