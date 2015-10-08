@@ -4,5 +4,5 @@
 $(function(){
     //$('#editorFrame').contentWindow.svgEditor.canvas.clear()
     var editingItem= window.localStorage.getItem('editing-map-name');
-    alert(editingItem);
+    document.getElementById('editorFrame').contentWindow.svgEditor.canvas.loadMapByFolderName(editingItem);
 })
