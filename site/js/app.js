@@ -19,8 +19,13 @@ angular.module('app', [
     ])
 
     .config(
-    [          '$stateProvider', '$urlRouterProvider',
+    ['$stateProvider', '$urlRouterProvider',
         function ($stateProvider,   $urlRouterProvider) {
+
+
+            // Use $urlRouterProvider to configure any redirects (when) and invalid urls (otherwise).
+            $urlRouterProvider
+                .otherwise('/');
 
             //////////////////////////
             // State Configurations //
@@ -43,7 +48,7 @@ angular.module('app', [
                     // For top level states, like this one, the parent template is
                     // the index.html file. So this template will be inserted into the
                     // ui-view within index.html.
-                    templateUrl: 'module-index/module-index.html',
+                    templateUrl: 'module-index/module-index.html'
 
                 })
 
