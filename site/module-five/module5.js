@@ -12,7 +12,7 @@ angular.module('app.module5', [
                 // module5 //
                 //////////////
                 .state('module5', {
-                    url: 'module5',
+                    url: '/module5',
                     templateUrl: 'module-five/module5.html',
                     //templateUrl: 'editor/svg-editor.html',
                     controller: ['$scope', '$state',
