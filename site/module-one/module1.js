@@ -19,6 +19,9 @@ angular.module('app.module1', [
                         function ($scope, $state) {
 
                             //Content in controller
+                            $scope.test = function(){
+                                alert("test");
+                            };
 
                         }]
                 })

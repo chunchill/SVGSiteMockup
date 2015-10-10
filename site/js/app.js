@@ -22,6 +22,8 @@ angular.module('app', [
     [          '$stateProvider', '$urlRouterProvider',
         function ($stateProvider,   $urlRouterProvider) {
 
+
+            $urlRouterProvider.otherwise('/home');
             //////////////////////////
             // State Configurations //
             //////////////////////////
@@ -36,14 +38,14 @@ angular.module('app', [
                 .state("home", {
 
                     // Use a url of "/" to set a state as the "index".
-                    url: "/",
+                    url: "home",
 
                     // Example of an inline template string. By default, templates
                     // will populate the ui-view within the parent state's template.
                     // For top level states, like this one, the parent template is
                     // the index.html file. So this template will be inserted into the
                     // ui-view within index.html.
-                    templateUrl: 'module-index/module-index.html',
+                    templateUrl: 'module-index/module-index.html'
 
                 })
 

@@ -2,7 +2,7 @@
  * 
  */
 
-app.controller("MapCompareCtrl", ['$scope','$sce', function ($scope,$sce) {
+angular.module('app.module3').controller("MapCompareCtrl", ['$scope','$sce', function ($scope,$sce) {
     'use strict';
     $scope.oldlist = [
                           {name:"中国地图",id:"1","typeId":0,"tslist":[{"date":"2015-04-05","version":1,"mapId":1},{"date":"2015-05-13","version":2,"mapId":1}]},
