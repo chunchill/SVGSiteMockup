@@ -19,11 +19,14 @@ angular.module('app', [
     ])
 
     .config(
-    [          '$stateProvider', '$urlRouterProvider',
+    ['$stateProvider', '$urlRouterProvider',
         function ($stateProvider,   $urlRouterProvider) {
 
 
-            $urlRouterProvider.otherwise('/home');
+            // Use $urlRouterProvider to configure any redirects (when) and invalid urls (otherwise).
+            $urlRouterProvider
+                .otherwise('/');
+
             //////////////////////////
             // State Configurations //
             //////////////////////////
@@ -38,7 +41,7 @@ angular.module('app', [
                 .state("home", {
 
                     // Use a url of "/" to set a state as the "index".
-                    url: "home",
+                    url: "/",
 
                     // Example of an inline template string. By default, templates
                     // will populate the ui-view within the parent state's template.
@@ -53,4 +56,3 @@ angular.module('app', [
         }
     ]
 );
-

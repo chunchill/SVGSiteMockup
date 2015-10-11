@@ -2,7 +2,7 @@ var refresh = function(){};
 var refreshCateGory = function(){
 	downList();
 };
-app.controller("HomeCtrl",function ($scope,$http) {
+angular.module('app').controller("HomeCtrl",function ($scope,$http) {
     'use strict';
     /*$scope.$on('change-map',function(event,data){
     	$scope.$broadcast('change-map',data);
